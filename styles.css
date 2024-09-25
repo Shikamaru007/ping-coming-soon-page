@@ -13,8 +13,12 @@ body {
     padding: 3rem 0;
 }
 .container {
+    max-width: 21.09375rem;
     width: 90%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 h1 {
     font-weight: 300;
@@ -39,7 +43,7 @@ form {
     flex-direction: column;
 }
 .emailInput {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     font-family: inherit;
     font-size: .8rem;
     border-radius: 50px;
@@ -69,6 +73,10 @@ form {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
     box-shadow: 0 5px 10px hsla(223, 87%, 63%, 0.2);
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: hsl(223, 87%, 73%);
 }
 .bottomSection img {
     width: 100%;
@@ -98,10 +106,75 @@ footer {
     border-radius: 50%;
     color: hsl(223, 87%, 63%);
     border: 1px solid hsla(223, 87%, 63%, 0.4);
+    cursor: pointer;
+}
+.fa-brands:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
 }
 footer p {
     color: hsl(0, 0%, 59%);
     font-size: .8rem;
+}
+
+
+
+
+@media screen and (min-width:767px){
+    .container {
+        max-width: 25.09375rem;
+    }
+}
+
+
+@media screen and (min-width:1023px){
+    .container {
+        max-width: 30rem;
+        height: 100%;
+    }
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 1.2rem;
+    }
+    body {
+        height: 100vh;
+        padding: 0;
+    }
+    form {
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        margin: 1.5rem 0 2rem 0;
+    }
+    #email-box {
+        width: 65%;
+        text-align: left;
+    }
+    .btn {
+        width: 30%;
+        margin: 0;
+    }
+    .errorMsg {
+        padding-left: 1.5rem;
+        font-size: .7rem;
+    }
+    footer {
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 1.7rem;
+    }
+    .container {
+        max-width: 38rem;
+    }
+    .errorMsg {
+        margin-bottom: 0;
+    }
 }
 
 
