@@ -87,6 +87,11 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .links {
     list-style: none;
     display: flex;
@@ -94,6 +99,12 @@ footer {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
+}
+.links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
 }
 
 .fa-brands {
